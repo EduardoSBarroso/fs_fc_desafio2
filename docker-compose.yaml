@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+    frontend:
+        build: ./react-app
+        container_name: reactjs_app
+        ports:
+            -   3001:3000
+        volumes:
+            -   ./react-app:/home/node/app
+    backend:
+        build: ./nest-app
+        container_name: nestjs-app
+        ports:
+            -   3000:3000
+        volumes:
+            -   ./nest-app:/home/node/app
