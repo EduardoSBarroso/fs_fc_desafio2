@@ -9,16 +9,16 @@ kubernetes rodando localmente
 
 ## Subindo o server
 
-<h3 style="font-bold:italic">Executar os seguintes comandos na raiz da pasta k8s</h3>
+<h4 style="font-bold:italic;color:green">Executar os seguintes comandos na raiz da pasta k8s</h4>
 
 `kubectl apply -f nest-app/deploy.yaml`
 `kubectl apply -f nest-app/service.yaml`
 `kubectl expose -f nest-app/deploy.yaml`
 `kubectl port-forward service/nest-app 3000`
 
-## Subindo o server
+<h4 style="font-style:italic;color:green">Executar os seguintes comandos na raiz da pasta k8s</h4>
 
-<h3 style="font-bold:italic">Executar os seguintes comandos na raiz da pasta k8s</h3>
+## Subindo o server
 
 `kubectl apply -f react-app/deploy.yaml`
 `kubectl apply -f react-app/service.yaml`
