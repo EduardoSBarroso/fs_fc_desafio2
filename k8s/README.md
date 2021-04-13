@@ -1,29 +1,27 @@
-# fs_fc_desafio2
-kubernetes rodando localmente
-# Imersão Full Stack & Full Cycle 2 - Desafio 2
+# Imersão Full Stack & Full Cycle 2 - Challenge 3
 
 ![Imersão Full Stack && Full Cycle](https://events-fullcycle.s3.amazonaws.com/events-fullcycle/static/site/img/grupo_4417.png)
 
-## Criação do cluster
+<div align="center">
+    <h2>Kubernetes run local in your machine.<a href="https://kind.sigs.k8s.io/docs/user/quick-start#installation"> Kind</a> documentation</h2>
+</div>
+
+## Creation cluster
 `kind create cluster --name <cluster_name>`
 
-## Subindo server
-
-<h4 style="font-bold:italic;color:#39FF14">Executar os seguintes comandos na raiz da pasta k8s</h4>
+## Pod #1
 
 `kubectl apply -f nest-app/deploy.yaml`
 `kubectl apply -f nest-app/service.yaml`
 `kubectl expose -f nest-app/deploy.yaml`
 `kubectl port-forward service/nest-app 3000`
 
-<h4 style="font-style:italic;color:#39FF14">Executar os seguintes comandos na raiz da pasta k8s</h4>
-
-## Subindo web
+## Pod #2
 
 `kubectl apply -f react-app/deploy.yaml`
 `kubectl apply -f react-app/service.yaml`
 `kubectl expose -f react-app/deploy.yaml`
-`kubectl port-forward service/react-app 3001`
+`kubectl port-forward service/react-app 80`
 
 ## Pods
 
@@ -32,6 +30,14 @@ kubernetes rodando localmente
 ## Services
 
 `kubectl get svc`
+
+## Get all
+
+`kubectl get all`
+
+## Get nodes
+
+`Kubectl get nodes`
 
 ## Delete cluster
 
