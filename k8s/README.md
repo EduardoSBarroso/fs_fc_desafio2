@@ -35,5 +35,4 @@ kubernets rodando localmente
 
 ## Kubernetes k8s
 
-<img src="https://img.shields.io/static/v1?label=Go&message=reference&color=blue&style=for-the-badge&logo=ghost"/>
-<img src="https://img.shields.io/static/v1?label=cii best practices&message=passing&color=green&style=for-the-badge&logo=ghost"/>
+![Badge](https://img.shields.io/static/v1?label=Go&message=reference&color=blue&style=for-the-badge&logo=ghost)
