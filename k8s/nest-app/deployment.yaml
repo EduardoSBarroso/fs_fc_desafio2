@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nest-api
+  name: nest-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nest-api
+      app: nest-app
   template:
     metadata:
       labels:
-        app: nest-api
+        app: nest-app
     spec:
       containers:
-        - name: nest-api
+        - name: nest-app
           image: "eduardosbarroso/fs_fc_desafio2-nest_api:latest"
           ports:
             - containerPort: 3000
