@@ -16,4 +16,4 @@ spec:
         - name: nest-app
           image: "eduardosbarroso/fs_fc_desafio2-nest_api:latest"
           ports:
-            - containerPort: 3000
+            - containerPort: 3000 

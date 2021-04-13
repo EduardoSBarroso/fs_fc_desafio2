@@ -16,4 +16,4 @@ spec:
         - name: react-app
           image: eduardosbarroso/fs_fc_desafio2-react_app:latest
           ports:
-            - containerPort: 80
+            - containerPort: 3001

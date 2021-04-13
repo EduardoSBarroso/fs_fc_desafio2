@@ -9,12 +9,16 @@ kubernetes rodando localmente
 
 ## Subindo o server
 
+<h3 style="font-bold:italic">Executar os seguintes comandos na raiz da pasta k8s</h3>
+
 `kubectl apply -f nest-app/deploy.yaml`
 `kubectl apply -f nest-app/service.yaml`
 `kubectl expose -f nest-app/deploy.yaml`
 `kubectl port-forward service/nest-app 3000`
 
 ## Subindo o server
+
+<h3 style="font-bold:italic">Executar os seguintes comandos na raiz da pasta k8s</h3>
 
 `kubectl apply -f react-app/deploy.yaml`
 `kubectl apply -f react-app/service.yaml`
@@ -29,7 +33,7 @@ kubernetes rodando localmente
 
 `kubectl get svc`
 
-## Services
+## Delete cluster
 
 `kind delete cluster --name <cluster_name>`
 
